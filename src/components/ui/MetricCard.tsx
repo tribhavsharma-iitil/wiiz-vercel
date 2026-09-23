@@ -9,7 +9,7 @@ export function MetricCard({ metric }: MetricCardProps) {
   const Icon = metricIconRegistry[metric.icon];
 
   return (
-    <div className="flex flex-1 items-center gap-4">
+    <div className="flex flex-1 items-center gap-4 lg:justify-center ">
       <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-brand">
         <Icon className="size-5 text-white" />
       </span>

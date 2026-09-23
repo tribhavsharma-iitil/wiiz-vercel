@@ -5,7 +5,16 @@ import { primaryCta, secondaryCta } from "@/lib/data/navigation";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-surface-glow to-white">
+    <section className="relative overflow-hidden">
+      <Image
+        src="/images/hero/wizz-hero-bg.png"
+        alt=""
+        fill
+        priority
+        aria-hidden="true"
+        sizes="100vw"
+        className="pointer-events-none object-cover"
+      />
       <Container className="relative z-10 flex flex-col items-center gap-10 pt-20 text-center md:pt-28">
         <div className="flex max-w-3xl flex-col items-center gap-5">
           <h1 className="text-display-xl font-extrabold">

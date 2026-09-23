@@ -46,9 +46,9 @@ export function WhyUsSection() {
           />
         </div>
 
-        <div className="flex flex-1 items-center gap-6 rounded-card border border-white/[0.08] bg-white/[0.08] p-8">
+        <div className="flex flex-1 flex-col items-stretch gap-6 rounded-card border border-white/[0.08] bg-white/[0.08] p-8 sm:flex-row sm:items-center">
           <DiagramCard card={wilzCore} />
-          <ArrowRightIcon className="size-6 shrink-0 text-white" />
+          <ArrowRightIcon className="size-6 shrink-0 self-center rotate-90 text-white sm:rotate-0" />
           <DiagramCard card={viteEatsApp} />
         </div>
       </Container>

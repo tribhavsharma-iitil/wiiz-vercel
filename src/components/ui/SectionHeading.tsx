@@ -23,8 +23,10 @@ export function SectionHeading({
   const isDark = theme === "dark";
 
   return (
-    <div className={cn("flex flex-col gap-4", isCentered ? "items-center text-center" : "items-start")}>
-      <Badge variant={isDark ? "light" : "dark"} className={isCentered ? "self-center" : undefined}>
+    <div
+      className={cn("flex flex-col items-start gap-4 text-left", isCentered && "md:items-center md:text-center")}
+    >
+      <Badge variant={isDark ? "light" : "dark"} className={isCentered ? "md:self-center" : undefined}>
         {eyebrow}
       </Badge>
       <h2
@@ -32,7 +34,7 @@ export function SectionHeading({
         className={cn(
           "text-display-lg font-bold",
           isDark ? "text-white" : "text-brand-ink",
-          isCentered && "max-w-3xl",
+          isCentered && "md:max-w-3xl",
         )}
       >
         {title}
@@ -42,7 +44,7 @@ export function SectionHeading({
           className={cn(
             "flex flex-col gap-4 text-body-lg",
             isDark ? "text-white/70" : "text-muted",
-            isCentered && "max-w-2xl",
+            isCentered && "md:max-w-2xl",
           )}
         >
           {description}

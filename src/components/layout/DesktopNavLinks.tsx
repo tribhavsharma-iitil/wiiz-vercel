@@ -40,7 +40,7 @@ export function DesktopNavLinks({ links }: DesktopNavLinksProps) {
   }, [links]);
 
   return (
-    <ul className="hidden items-center gap-8 text-body-sm md:flex">
+    <ul className="hidden items-center gap-8 text-body-sm lg:flex">
       {links.map((link) => (
         <li key={link.href}>
           <Link

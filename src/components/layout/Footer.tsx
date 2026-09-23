@@ -32,9 +32,9 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex gap-16 text-body-sm">
+          <div className="flex flex-col gap-8 text-body-sm sm:flex-row sm:gap-16">
             {footerLinkColumns.map((column) => (
-              <nav key={column.title} aria-label={column.title} className="flex w-[140px] flex-col gap-4">
+              <nav key={column.title} aria-label={column.title} className="flex flex-col gap-4 sm:w-[140px]">
                 <p className="font-semibold text-white">{column.title}</p>
                 {column.links.map((link) => (
                   <Link key={link.href} href={link.href} className="text-white/70 transition-colors hover:text-white">

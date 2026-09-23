@@ -54,7 +54,7 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-8 rounded-card border border-border-subtle bg-surface-tint p-6 sm:flex-row sm:flex-wrap sm:p-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 rounded-card border border-border-subtle bg-surface-tint p-6 sm:p-10">
           {performanceMetrics.map((metric) => (
             <MetricCard key={metric.id} metric={metric} />
           ))}

@@ -15,7 +15,7 @@ export function Navbar() {
 
         <DesktopNavLinks links={primaryNavLinks} />
 
-        <Button href={primaryCta.href} variant="primary" className="hidden md:inline-flex">
+        <Button href={primaryCta.href} variant="primary" className="hidden lg:inline-flex">
           {primaryCta.label}
         </Button>
 

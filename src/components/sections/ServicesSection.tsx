@@ -4,7 +4,7 @@ import { services } from "@/lib/data/services";
 export function ServicesSection() {
   return (
     <section id="services" className="w-full scroll-mt-24 bg-surface-tint py-20 md:py-24 lg:py-[100px]">
-      <Container className="flex flex-col items-center gap-12 justify-center">
+      <Container className="flex flex-col items-start gap-12 md:items-center md:justify-center">
         <SectionHeading
           eyebrow="Services"
           align="center"
